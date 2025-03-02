@@ -106,7 +106,7 @@ export default function Home() {
     }, {} as Record<string, number>);
 
     const maxCount = Math.max(...Object.values(seasonCount));
-    const dominantSeason = Object.entries(seasonCount).find(([_, count]) => count === maxCount)?.[0];
+    const dominantSeason = Object.entries(seasonCount).find(([, count]) => count === maxCount)?.[0];
 
     const seasonKorean = {
       spring: '봄 웜톤',
