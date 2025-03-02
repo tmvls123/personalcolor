@@ -12,8 +12,6 @@ export default function Home() {
   const [selectedSeason, setSelectedSeason] = useState<string>('spring');
   const [selectedColors, setSelectedColors] = useState<Array<{color: string, season: string}>>([]);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
-  const [showModal, setShowModal] = useState(false);
-  const [modalImage, setModalImage] = useState<{color: string, name: string} | null>(null);
   const analysisRef = useRef<HTMLDivElement>(null);
 
   // 퍼스널 컬러 시스템 색상 옵션
